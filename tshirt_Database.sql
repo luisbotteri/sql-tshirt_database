@@ -347,3 +347,4 @@ select article_Type, color, shirt_Size, last_Worn from tshirt_Table;
 update tshirt_Table set shirt_Size='L' where shirt_Size='M';
 desc tshirt_Table;
 select article_Type, color from tshirt_Table order by article_Type asc;
+select * from tshirt_Table where shirt_Size = 'XL' order by color asc;
