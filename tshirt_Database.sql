@@ -7,6 +7,7 @@ color varchar (100) not null,
 shirt_Size varchar (4),
 last_Worn smallint
 );
+desc tshirt_Table;
 alter table tshirt_Table modify shirt_Size varchar (6);
 select * from tshirt_Table;
 insert into tshirt_Table (shirt_Id, article_Type, color, shirt_Size, last_Worn)
@@ -339,9 +340,10 @@ values
 (NULL, 'T-Shirt', 'Green', 'S', 5)
 ;
 select * from tshirt_Table;
-use tshirt_Table;
 insert into tshirt_Table (article_Type, color, shirt_Size, last_Worn)
 values ('Polo Shirt', 'Purple', 'M', 50);
 select * from tshirt_Table where article_Type='Polo Shirt' and color='White';
 select article_Type, color, shirt_Size, last_Worn from tshirt_Table;
 update tshirt_Table set shirt_Size='L' where shirt_Size='M';
+desc tshirt_Table;
+select article_Type, color from tshirt_Table order by article_Type asc;
