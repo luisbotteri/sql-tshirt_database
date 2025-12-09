@@ -358,3 +358,5 @@ update tshirt_Table set color = 'Light Blue', last_Worn = '37' where article_Typ
 select * from tshirt_table where article_Type = 'Tank Top';
 select * from tshirt_table where last_Worn = '35';
 delete from tshirt_table where last_Worn = '35';
+select * from tshirt_table;
+delete from tshirt_table where last_Worn = '50';
